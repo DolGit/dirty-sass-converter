@@ -1,6 +1,6 @@
 {
   "name": "@dolgit/dirty-sass-converter",
-  "version": "0.1.1-development",
+  "version": "0.1.2-development",
   "description": "Don't use this",
   "browser": "lib/index.js",
   "main": "lib/index.js",
