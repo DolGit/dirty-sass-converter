@@ -1,0 +1,31 @@
+{
+  "name": "@modular-rocks/dirty-sass-converter",
+  "version": "0.1.1-development",
+  "description": "Don't use this",
+  "browser": "lib/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
+  "peerDependencies": {},
+  "devDependencies": {
+    "node-sass": "5.0.0"
+  },
+  "author": "Alex Dollery (DolNpm/DolGit)",
+  "homepage": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dolgit/dirty-sass-converter.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bin": {
+    "dirty-sass-inject-styles": "bin/inject"
+  },
+  "dependencies": {}
+}
