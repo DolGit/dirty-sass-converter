@@ -15,7 +15,6 @@
   },
   "peerDependencies": {"node-sass": "*"},
   "devDependencies": {
-    "node-sass": "5.0.0"
   },
   "author": "Alex Dollery (DolNpm/DolGit)",
   "homepage": "",
@@ -31,6 +30,6 @@
     "dirty-sass-inject-styles": "bin/inject"
   },
   "dependencies": {
-
+    "node-sass": "5.0.0"
   }
 }
