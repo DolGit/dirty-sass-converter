@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-const file = require('../src/index.js')
+const file = require('../lib/index.js')

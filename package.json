@@ -10,6 +10,9 @@
     "lib",
     "umd"
   ],
+  "scripts": {
+    "build": "nwb build-react-component"
+  },
   "peerDependencies": {},
   "devDependencies": {
     "node-sass": "5.0.0"
