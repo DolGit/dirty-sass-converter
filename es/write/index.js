@@ -15,7 +15,7 @@ var write = function write(file, index, newLines, dir, subdir) {
     css = css.split(/\n/).map(function (x) {
       return ' "' + x + '" ';
     }).join("+");
-    newLines[index] = '\ndocument.body.innerHTML += "<style>" + ' + css + ' + "</style>";\n    ';
+    newLines[index] = '\nlet __styleContainer__ = document.createElement(\'style\')\n__styleContainer__.innerHTML = ' + css + '\ndocument.body.appendChild(__styleContainer__)\n    ';
     fs.writeFileSync(file, newLines.join("\n"));
   });
 };

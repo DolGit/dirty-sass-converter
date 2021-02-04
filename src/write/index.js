@@ -14,7 +14,9 @@ const write = (file, index, newLines, dir, subdir) => {
     let css = result.css.toString()
     css = css.split(/\n/).map((x) => ` "${x}" `).join("+")
     newLines[index] = `
-document.body.innerHTML += "<style>" + ${css} + "</style>";
+let __styleContainer__ = document.createElement('style')
+__styleContainer__.innerHTML = ${css}
+document.body.appendChild(__styleContainer__)
     `
     fs.writeFileSync(file, newLines.join("\n"));
   });
